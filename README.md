@@ -7,3 +7,23 @@ I  introduce how you can set up Github Actions for a NodeJS project that allows 
 GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that build and test every pull request to your repository or deploy merged pull requests to production.
 
 NodeJS GitHub action: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+
+name: NodeJS GitHub Action
+
+on: push
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v3 #checkout the repository
+     - name: Use Node
+     
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: Install dependencies
+      run: npm install
+    - name: Run test
+      run: npm test
