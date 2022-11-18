@@ -1,0 +1,34 @@
+{
+  "name": "nodejs_cicd_pipeline_deploy",
+  "version": "1.0.0",
+  "description": "NodeJS application deploying on server via CICD pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest src/app.test.js",
+    "start": "nodemon src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevDasPratap/NodeJS_CICD_Pipeline_Deploy.git"
+  },
+  "keywords": [
+    "nodejs",
+    "cicd",
+    "deploy",
+    "git",
+    "server"
+  ],
+  "author": "Pratap Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevDasPratap/NodeJS_CICD_Pipeline_Deploy/issues"
+  },
+  "homepage": "https://github.com/DevDasPratap/NodeJS_CICD_Pipeline_Deploy#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "supertest": "^6.3.1"
+  }
+}
