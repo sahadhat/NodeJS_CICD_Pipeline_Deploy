@@ -9,21 +9,25 @@ GitHub Actions is a continuous integration and continuous delivery (CI/CD) platf
 NodeJS GitHub action: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
 
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
 name: NodeJS GitHub Action
 
 on: push
 
 jobs:
-  build: 
+  build:
     runs-on: ubuntu-latest
+
     steps:
-     - uses: actions/checkout@v3 #checkout the repository
-     - name: Use Node
+      - uses: actions/checkout@v3 #checkout the repository
+      - name: Use Node
      
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
-    - name: Install dependencies
-      run: npm install
-    - name: Run test
-      run: npm test
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm install
+      - name: Run test
+        run: npm test
