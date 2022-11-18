@@ -7,16 +7,16 @@ on: push
 
 jobs:
   build:
-  
     runs-on: ubuntu-latest
+
     steps:
-     - uses: actions/checkout@v3 #checkout the repository
-     - name: Use Node
+      - uses: actions/checkout@v3 #checkout the repository
+      - name: Use Node
      
-    - uses: actions/setup-node@v3
-      with:
-         node-version: 16
-    - name: Install dependencies
-      run: npm install
-    - name: Run test
-      run: npm test
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: npm install
+      - name: Run test
+        run: npm test
