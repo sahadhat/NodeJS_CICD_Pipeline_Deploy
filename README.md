@@ -1,6 +1,6 @@
 # NodeJS CI/CD Pipeline create and Deploying Node application on server
 
-### GitHub Actions - NodeJS Project | CI/CD Pipeline and Deploying on Heroku | DevOps Tutorial
+### GitHub Actions - NodeJS Project | CI/CD Pipeline and Deploying on Heroku | DevOps Tutorial.
 
 I  introduce how you can set up Github Actions for a NodeJS project that allows you to include CI/CD capabilities to Build, Test and Auto Deploy our NodeJS project.
 
